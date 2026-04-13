@@ -3,6 +3,7 @@ import { TextAnimate } from "./ui/text-animate"
 import Link from "next/dist/client/link"
 import { Marquee3D, MarqueeDemo } from "@/components/Marque"
 import { GFGBento } from "@/components/GFGBento"
+import TeamSection from "./Judges";
 
 const ContentSection = () => {
   return (
@@ -71,6 +72,11 @@ const ContentSection = () => {
       <section className="pb-4 md:pb-8 lg:pb-16 flex justify-center items-center">
         <div className='max-w-7xl flex items-center'>
           <GFGBento />
+        </div>
+      </section>
+      <section className="pb-4 md:pb-8 lg:pb-16 flex justify-center items-center">
+        <div className='max-w-7xl flex items-center'>
+          <TeamSection />
         </div>
       </section>
     </>
