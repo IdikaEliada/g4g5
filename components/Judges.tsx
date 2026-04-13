@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { TypingAnimation } from "@/components/ui/typing-animation";
+import { TextAnimate } from "./ui/text-animate";
 
 interface TeamMember {
   name: string;
@@ -156,7 +158,7 @@ function TeamCard({ member }: TeamCardProps) {
         <a href="#">{member.name}</a>
       </h3>
       <p>{member.role}</p>
-      <SocialLinks socials={member.socials} />
+      {/* <SocialLinks socials={member.socials} /> */}
     </div>
   );
 }
@@ -167,12 +169,18 @@ export default function TeamSection() {
       <div className="py-8 px-4 mx-auto max-w-7xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-zinc-950 font-heading">
-            Our team
+            <TypingAnimation showCursor={false} startOnView>
+              Meet The Judges
+            </TypingAnimation>
           </h2>
-          <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and elements built with the
-            utility classes from Tailwind
-          </p>
+          <div className="font-light flex item-center justify-center text-center">
+            <TextAnimate animation="blurInUp" by="word" className="max-w-lg text-lg md:text-2xl line-clamp-2 leading-8 text-zinc-950 px-16 md:px-0 ">
+
+              Explore the whole collection of open-source web components and elements built with the
+              utility classes from Tailwind
+
+            </TextAnimate>
+          </div>
         </div>
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {teamMembers.map((member) => (

@@ -4,7 +4,6 @@ import { NumberTicker } from "@/components/ui/number-ticker"
 import { AnimatedHexPattern } from "@/components/ui/animated-grid-pattern"
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
-import { TypingAnimation } from "@/components/ui/typing-animation"
 import Link from "next/link"
 import { ShinyButton } from "@/components/ui/shiny-button"
 import { PixelImage } from "@/components/ui/pixel-image"
@@ -21,19 +20,19 @@ export default function Hero() {
       <div className="flex items-center justify-center relative">
         <div className="flex flex-col justify-star items-center md:items-start gap-6 text-center  sm:text-left">
           <h1 className=" text-[clamp(3rem,10vw,6rem)] font-heading text-7xl font-semibold text-black pb-2 max-w-4xl">
-            <TypingAnimation showCursor={false} startOnView  className="-tracking-tighter">
+            <span  className="-tracking-tighter">
               Going for
-            </TypingAnimation>{" "}
+            </span>{" "}
             <span className="relative inline-block tracking-tight text-[clamp(3.25rem,10.5vw,7.25rem)]">
 
               <AuroraText>Gold</AuroraText> {" "}
               <NumberTicker value={5.0} decimalPlaces={1} />
             </span>
           </h1>
-          <TextAnimate animation="blurInUp" by="word" className="max-w-lg text-lg md:text-2xl line-clamp-2 leading-8 text-zinc-950 px-16 md:px-0 ">
+          <span className="max-w-lg text-lg md:text-2xl line-clamp-2 leading-8 text-zinc-950 px-16 md:px-0 ">
             The Quantum Leap - From Potential to Power: Scaling the Next Generation of Industry Leaders
 
-          </TextAnimate>
+          </span>
 
           <div className="flex w-full items-center justify-center md:justify-start font-accent gap-4 mt-6">
             <Link href="/register">
