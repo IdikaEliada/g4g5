@@ -132,7 +132,7 @@ h1, h2 {
   }}
 
 :root {
-  --background: oklch(98.96% 0.0046 264.05)
+  --background: oklch(98.96% 0.0046 264.05);
   --color-dark: #08060d;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
