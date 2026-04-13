@@ -68,8 +68,10 @@ const ContentSection = () => {
           </div>
         </div>
       </section>
-      <section className="py-4 md:py-8 lg:py-16">
-        <GFGBento />
+      <section className="pb-4 md:pb-8 lg:pb-16 flex justify-center items-center">
+        <div className='max-w-7xl flex items-center'>
+          <GFGBento />
+        </div>
       </section>
     </>
   )

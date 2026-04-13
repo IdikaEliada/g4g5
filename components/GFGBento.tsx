@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { BellIcon, Share2Icon, TrophyIcon, MapPinIcon } from "lucide-react"
+import { BellIcon, Share2Icon, TrophyIcon, MapPinIcon, CalendarIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -73,7 +73,7 @@ const features = [
       "Pay to Zenith Bank · 2410648511 (Okafor Uchechukwu Benedict). Include name + category in narration, then send proof to 09059113423 or 07043570945.",
     href: "/register",
     cta: "Register now",
-    className: "col-span-3 lg:col-span-2",
+    className: "col-span-3 lg:col-span-1",
     background: (
       <Marquee
         pauseOnHover
@@ -111,6 +111,19 @@ const features = [
     background: (
       <div className="absolute inset-0 flex items-center justify-center opacity-20">
         <MapPinIcon strokeWidth={0.5} className="size-40 text-yellow-400" />
+      </div>
+    ),
+  },
+  {
+    Icon: CalendarIcon,
+    name: "Date & Time",
+    description: "Anticipate",
+    className: "col-span-3 lg:col-span-1",
+    href: "#venue",
+    cta: "Get directions",
+    background: (
+      <div className="absolute inset-0 flex items-center justify-center opacity-20">
+        <CalendarIcon strokeWidth={0.5} className="size-40 text-yellow-400" />
       </div>
     ),
   },
