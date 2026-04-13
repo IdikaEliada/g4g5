@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:hidden mask-[linear-gradient(to_bottom,#F8F8FF_75,transparent)]">
-            <PixelImage src="/sen-gen.png" grid="8x8" />
+            <PixelImage src="/sen-gen.svg" grid="8x8" />
           </div>
         </div>
         <div className="hidden lg:block h-fit  mask-[linear-gradient(to_bottom,#F8F8FF_80%,transparent, transparent)]">
@@ -55,7 +55,7 @@ export default function Hero() {
 
         </div>
         <div className="absolute hidden lg:block right-0 mask-[linear-gradient(to_bottom,#F8F8FF_60%,transparent)]">
-          <PixelImage src="/sen-gen.png" grid="8x8" />
+          <PixelImage src="/sen-gen.svg" grid="8x8" />
         </div>
 
 
