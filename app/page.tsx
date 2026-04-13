@@ -11,7 +11,7 @@ export default function Home() {
           <Hero />
         </section>
         <section>
-          {/* <ContentSection /> */}
+          <ContentSection />
         </section>
         {/* <section>
           <ShiftingCountdown />

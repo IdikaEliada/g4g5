@@ -37,7 +37,7 @@ export default function Hero() {
 
           <div className="flex w-full items-center justify-center md:justify-start font-accent gap-4 mt-6">
             <Link href="/register">
-              <ShinyButton className={cn("tracking-wider justify-center items-center flex-1 text-[rgb(255,255,255,90%)]  rounded-2xl hover:border-2 px-4 md:px-8 lg:px-16 border-dashed border-alt bg-black py-4 font-semibold uppercase transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:bg-accent hover:shadow-[4px_4px_0px_black] hover:text-background hover:border-dark active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none")}>
+              <ShinyButton className={cn("tracking-wider justify-center items-center flex-1 text-[rgb(255,255,255,90%)]  rounded-2xl hover:border-2 px-4 md:px-8 lg:px-16 border-dashed border-alt bg-black py-4 font-semibold uppercase transition-all duration-300 hover:-translate-x-1 hover:-translate-y-1 hover:rounded-md hover:bg-accent hover:shadow-[4px_4px_0px_black] hover:text-black hover:border-dark active:translate-x-0 active:translate-y-0 active:rounded-2xl active:shadow-none")}>
                 Register Now
               </ShinyButton>
             </Link>

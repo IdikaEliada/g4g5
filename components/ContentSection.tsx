@@ -68,7 +68,7 @@ const ContentSection = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="py-4 md:py-8 lg:py-16">
         <GFGBento />
       </section>
     </>
