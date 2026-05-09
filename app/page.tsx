@@ -1,6 +1,8 @@
 //import ShiftingCountdown from '../components/CountDown'
 import Hero from '@/components/Hero'
 import ContentSection from '@/components/ContentSection'
+import Carousel from '@/components/Carousel'
+import logos from '@/components/lib/sponsors'
 
 export default function Home() {
   return (
@@ -16,6 +18,9 @@ export default function Home() {
         {/* <section>
           <ShiftingCountdown />
         </section> */}
+        <section>
+          <Carousel logos={logos} />
+        </section>
       </main>
     </>
   )
