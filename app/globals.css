@@ -169,7 +169,7 @@ h1, h2 {
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-.dark {
+/* .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
@@ -205,7 +205,7 @@ h1, h2 {
   --color-2: #596ad9;
   --color-3: #4bcae7;
   --color-4: #ff6a00;
-}
+} */
 
 @layer base {
   * {
