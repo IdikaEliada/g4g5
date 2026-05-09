@@ -8,6 +8,7 @@ import Link from "next/link"
 import { ShinyButton } from "@/components/ui/shiny-button"
 import { PixelImage } from "@/components/ui/pixel-image"
 import { ScrollVelocityContainer, ScrollVelocityRow } from "@/components/ui/scroll-based-velocity"
+import { sponsors } from "@/lib/sponsors"
 
 export default function Hero() {
   return (
