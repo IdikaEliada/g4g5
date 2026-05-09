@@ -200,7 +200,7 @@ export default function TeamSection() {
             <TextAnimate
               animation="blurInUp"
               by="word"
-              className="max-w-lg text-lg md:text-2xl line-clamp-3 leading-8 text-zinc-950 px-16 md:px-0"
+              className="max-w-lg text-lg md:text-2xl line-clamp-3 leading-8 text-zinc-950 px-4 md:px-0"
             >
               Seasoned professionals and industry leaders who will evaluate your brilliance and crown the champions of The Quantum Leap.
             </TextAnimate>
