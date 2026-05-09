@@ -166,7 +166,7 @@ function TeamCard({ member }: TeamCardProps) {
 export default function TeamSection() {
   return (
     <section >
-      <div className="py-8 px-4 mx-auto max-w-7xl text-center lg:py-16 lg:px-6">
+      <div className="py-8 px-4() max-w-7xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-zinc-950 font-heading">
             <TypingAnimation showCursor={false} startOnView>
