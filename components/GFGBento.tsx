@@ -70,7 +70,7 @@ const features = [
     Icon: Share2Icon,
     name: "Register & Pay",
     description:
-      "Pay to Zenith Bank · 2410648511 (Okafor Uchechukwu Benedict). Include name + category in narration, then send proof to 09059113423 or 07043570945.",
+      "Click Register and follow the instructions.",
     href: "/register",
     cta: "Register now",
     className: "col-span-3 lg:col-span-1",
