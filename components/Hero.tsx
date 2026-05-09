@@ -62,7 +62,7 @@ export default function Hero() {
       <div className="lg:hidden py-8">
         <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
           <ScrollVelocityRow baseVelocity={10} direction={1}>
-            <h1>Hello</h1>
+            
           </ScrollVelocityRow>
           <ScrollVelocityRow baseVelocity={10} direction={-1}>
             #TheQuantumLeap#G4G5.0 
