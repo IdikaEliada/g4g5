@@ -4,9 +4,10 @@ interface Sponsors {
 }
 
 const sponsors: Sponsors[] = [
-  { src: '/GDG-logo.png', alt: 'GDG FUTO Logo' },
-  { src: '/ases_futo_logo.png', alt: 'ASES FUTO Logo' },
-  { src: '/DEFI_FUTO_logo.png', alt: 'Futo Departments Logo' },
+  { src: 'sponsors/2.jpg', alt: 'GDG FUTO Logo' },
+  { src: 'sponsors/e.jpg', alt: 'ASES FUTO Logo' },
+  { src: 'sponsors/DEFI_FUTO_logo.png', alt: 'Futo Departments Logo' },
+  { src: 'sponsors/ases_futo_logo.png', alt: 'ASES FUTO Logo' }, { src: 'sponsors/DEFI_FUTO_logo.png', alt: 'Futo Departments Logo' },
 ]
 
 export default sponsors
