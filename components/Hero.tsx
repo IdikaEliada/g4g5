@@ -8,7 +8,7 @@ import Link from "next/link"
 import { ShinyButton } from "@/components/ui/shiny-button"
 import { PixelImage } from "@/components/ui/pixel-image"
 import { ScrollVelocityContainer, ScrollVelocityRow } from "@/components/ui/scroll-based-velocity"
-import { sponsors } from "@/lib/sponsors"
+import sponsors from "@/lib/sponsors"
 
 export default function Hero() {
   return (
@@ -63,7 +63,7 @@ export default function Hero() {
       <div className="lg:hidden py-8">
         <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
           <ScrollVelocityRow baseVelocity={10} direction={1}>
-            {doubled.map((logo, i) => (
+            {sponsors.map((logo, i) => (
               <img
                 key={i}
                 src={logo.src}
