@@ -72,7 +72,13 @@ export default function Hero() {
               />))}
           </ScrollVelocityRow>
           <ScrollVelocityRow baseVelocity={10} direction={-1}>
-            #TheQuantumLeap#G4G5.0 
+            {sponsors.map((logo, i) => (
+              <img
+                key={i}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-20 object-contain shrink-0"
+              />))} 
           </ScrollVelocityRow>
         </ScrollVelocityContainer>
       </div>
