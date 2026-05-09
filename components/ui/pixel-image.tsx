@@ -92,7 +92,7 @@ export const PixelImage = ({
   }, [rows, cols, maxAnimationDelay])
 
   return (
-    <div className="relative h-125 w-105 select-none md:h-175 md:w-195 bg-red-500">
+    <div className="relative h-125 w-95 select-none md:h-175 md:w-195 bg-red-500">
       {pieces.map((piece, index) => (
         <div
           key={index}
