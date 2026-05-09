@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
 
           <div className="lg:hidden mask-[linear-gradient(to_bottom,#F8F8FF_75,transparent)]">
-            <PixelImage src="/sec_gen.png" grid="8x8" />
+            <PixelImage src="/sec-gen.png" grid="8x8" />
           </div>
         </div>
         <div className="hidden lg:block h-fit  mask-[linear-gradient(to_bottom,#F8F8FF_80%,transparent, transparent)]">
