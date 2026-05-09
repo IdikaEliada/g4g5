@@ -2,7 +2,7 @@
 import Hero from '@/components/Hero'
 import ContentSection from '@/components/ContentSection'
 import Carousel from '@/components/Carousel'
-import logos from '@/components/lib/sponsors'
+import logos from '@/lib/sponsors'
 
 export default function Home() {
   return (
