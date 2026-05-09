@@ -202,8 +202,7 @@ export default function TeamSection() {
               by="word"
               className="max-w-lg text-lg md:text-2xl line-clamp-3 leading-8 text-zinc-950 px-16 md:px-0"
             >
-              Explore the whole collection of open-source web components and
-              elements built with the utility classes from Tailwind
+              Seasoned professionals and industry leaders who will evaluate your brilliance and crown the champions of The Quantum Leap.
             </TextAnimate>
           </div>
         </div>
