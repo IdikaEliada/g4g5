@@ -33,9 +33,9 @@ export const PixelImage = ({
   src,
   grid = "6x4",
   grayscaleAnimation = true,
-  pixelFadeInDuration = 1000,
-  maxAnimationDelay = 1200,
-  colorRevealDelay = 1300,
+  pixelFadeInDuration = 100,
+  maxAnimationDelay = 120,
+  colorRevealDelay = 130,
   customGrid,
 }: PixelImageProps) => {
   const [isVisible, setIsVisible] = useState(false)
