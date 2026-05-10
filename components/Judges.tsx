@@ -94,7 +94,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
           {/* Backdrop */}
           <motion.div
             key="backdrop"
-            className="fixed inset-0 z-40 bg-black/60"
+            className="fixed inset-0 z-40 bg-zinc-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
