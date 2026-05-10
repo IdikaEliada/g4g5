@@ -92,12 +92,12 @@ const DATA = {
   },
 }
 
-export function DockDemo() {
+export function NavBar() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <span className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
+      {/*<span className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
         Dock
-      </span>
+      </span>*/}
       <TooltipProvider>
         <Dock direction="middle">
           {DATA.navbar.map((item) => (
