@@ -60,7 +60,7 @@ export default function Hero() {
 
 
       </div>
-      <div className="lg:hidden py-8">
+      <div className=" py-8">
         <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
           <ScrollVelocityRow baseVelocity={10} direction={1}>
             {sponsors.map((logo, i) => (
