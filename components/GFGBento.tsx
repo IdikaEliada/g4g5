@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { Astroid, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
+import { Sparkles, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -18,7 +18,7 @@ const categories = [
 
 const features = [
   {
-    Icon: Astroid,
+    Icon: Sparkles,
     name: "Going for Gold 5.0",
     description:
       "The Quantum Leap — From Potential to Power. FUTO's premier student competition, 2026.",
