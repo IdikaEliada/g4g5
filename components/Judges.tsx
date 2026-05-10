@@ -137,7 +137,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
                   height={96}
                   className="rounded-full mb-4 ring-2 ring-yellow-400"
                 />
-                <h2 className="text-2xl font-bold font-heading text-white mb-1">
+                <h2 className="text-2xl font-bold font-heading text-black mb-1">
                   {member.name}
                 </h2>
                 <span className="text-yellow-400 text-sm font-medium mb-6">
