@@ -135,8 +135,8 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
                     src={member.avatar}
                     alt={`${member.name} Avatar`}
                     width={60}
-                    height={48}
-                    className="rounded-full mb-4 ring-2 ring-yellow-400"
+                    height={60}
+                    className="rounded-full mb-4 ring-2 ring-yellow-400 aspect-square"
                   />
                   <div className="flex flex-col">
                     <h2 className="text-2xl font-bold font-heading text-black mb-1">
