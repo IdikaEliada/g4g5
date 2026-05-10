@@ -60,7 +60,7 @@ export default function Hero() {
 
 
       </div>
-      <div className=" py-8">
+      <div className="mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] py-8">
         <ScrollVelocityContainer className="text-4xl font-bold md:text-7xl">
           <ScrollVelocityRow baseVelocity={10} direction={1}>
             {sponsors.map((logo, i) => (
