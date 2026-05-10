@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { BellIcon, Share2Icon, Award, MapPinIcon, CalendarIcon } from "lucide-react"
+import { Astroid, Share2Icon, Award, MapPinIcon, CalendarIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -18,7 +18,7 @@ const categories = [
 
 const features = [
   {
-    Icon: Award,
+    Icon: Astroid,
     name: "Going for Gold 5.0",
     description:
       "The Quantum Leap — From Potential to Power. FUTO's premier student competition, 2026.",
@@ -55,7 +55,7 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
+    Icon: Award,
     name: "What You Win",
     description:
       "Cash prizes, brand new laptops, smartphones, and access to exclusive global mentorship programs.",
