@@ -130,19 +130,21 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
             {/* Scrollable content */}
             <div className="flex-1 overflow-y-auto px-6 pb-8 pt-2">
               <div className="flex flex-col items-center ">
-                <Image
-                  src={member.avatar}
-                  alt={`${member.name} Avatar`}
-                  width={96}
-                  height={96}
-                  className="rounded-full mb-4 ring-2 ring-yellow-400"
-                />
-                <h2 className="text-2xl font-bold font-heading text-black mb-1">
-                  {member.name}
-                </h2>
-                <span className="text-yellow-400 text-sm font-medium mb-6">
-                  {member.role}
-                </span>
+                <div className="flex">
+                  <Image
+                    src={member.avatar}
+                    alt={`${member.name} Avatar`}
+                    width={96}
+                    height={96}
+                    className="rounded-full mb-4 ring-2 ring-yellow-400"
+                  />
+                  <h2 className="text-2xl font-bold font-heading text-black mb-1">
+                    {member.name}
+                  </h2>
+                  <span className="text-yellow-400 text-sm font-medium mb-6">
+                    {member.role}
+                  </span>
+                </div>
                 <p className="text-zinc-700 text-base leading-7 max-w-lg">
                   {member.bio}
                 </p>
