@@ -17,6 +17,8 @@ const sponsors: Sponsors[] = [
   { src: 'sponsors/s11.jpg', alt: 'Futo Departments Logo' },
   { src: 'sponsors/s12.jpg', alt: 'ASES FUTO Logo' }, { src: 'sponsors/s13.jpg', alt: 'Futo Departments Logo' },
   { src: 'sponsors/s14.jpg', alt: 'GDG FUTO Logo' },
+  { src: 'sponsors/s15.png', alt: 'ASES FUTO Logo' }, 
+  { src: 'sponsors/s16.png', alt: 'Futo Departments Logo' },
 ]
 
 export default sponsors
