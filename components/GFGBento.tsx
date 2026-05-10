@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { Astroid, Share2Icon, Award, MapPinIcon, CalendarIcon } from "lucide-react"
+import { Astroid, Share2Icon, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -55,7 +55,7 @@ const features = [
     ),
   },
   {
-    Icon: Award,
+    Icon: BadgeDollarSign,
     name: "What You Win",
     description:
       "Cash prizes, brand new laptops, smartphones, and access to exclusive global mentorship programs.",
