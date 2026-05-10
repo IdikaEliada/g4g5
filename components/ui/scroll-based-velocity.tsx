@@ -72,7 +72,7 @@ interface ScrollVelocityRowImplProps extends ScrollVelocityRowProps {
 
 function ScrollVelocityRowImpl({
   children,
-  baseVelocity = 5,
+  baseVelocity = 2,
   direction = 1,
   className,
   velocityFactor,
