@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { Sparkles, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
+import { Sparkles, BadgeDollarSign, MapPinIcon, CalendarIcon, Bookmark } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -67,7 +67,7 @@ const features = [
     ),
   },
   {
-    Icon: BadgeDollarSign,
+    Icon: Bookmark,
     name: "Register & Pay",
     description:
       "Click Register and follow the instructions.",
