@@ -104,7 +104,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
           {/* Bottom Sheet */}
           <motion.div
             key="sheet"
-            className="fixed bottom-0 left-0 right-0 z-50 flex flex-col rounded-t-3xl bg-zinc-50 border-t border-zinc-100"
+            className="fixed bottom-0 left-0 right-0 z-50 flex flex-col rounded-t-3xl bg-zinc-50/10 border-t border-zinc-100"
             style={{ height: "75dvh" }}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
