@@ -120,7 +120,7 @@ const features = [
     description: "Anticipate",
     className: "col-span-3 lg:col-span-1",
     href: "#venue",
-    cta: "Get directions",
+    cta: "View Countdown",
     background: (
       <div className="absolute inset-0 flex items-center justify-center opacity-20">
         <CalendarIcon strokeWidth={0.5} className="size-40 text-yellow-400" />
