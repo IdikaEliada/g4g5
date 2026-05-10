@@ -1,5 +1,5 @@
 import { FileTextIcon } from "@radix-ui/react-icons"
-import { Astroid, Share2Icon, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
+import { Astroid, BadgeDollarSign, MapPinIcon, CalendarIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { HeroList } from "@/components/HeroList"
@@ -67,7 +67,7 @@ const features = [
     ),
   },
   {
-    Icon: Share2Icon,
+    Icon: BadgeDollarSign,
     name: "Register & Pay",
     description:
       "Click Register and follow the instructions.",
