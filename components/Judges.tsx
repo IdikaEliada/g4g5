@@ -104,7 +104,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
           {/* Bottom Sheet */}
           <motion.div
             key="sheet"
-            className="fixed bottom-0 left-0 right-0 z-50 flex flex-col rounded-t-3xl bg-zinc-900 border-t border-zinc-700"
+            className="fixed bottom-0 left-0 right-0 z-50 flex flex-col rounded-t-3xl bg-zinc-50 border-t border-zinc-100"
             style={{ height: "75dvh" }}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
@@ -113,7 +113,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
           >
             {/* Drag handle */}
             <div className="flex justify-center pt-3 pb-2 shrink-0">
-              <div className="w-10 h-1 rounded-full bg-zinc-600" />
+              <div className="w-10 h-1 rounded-full bg-zinc-400" />
             </div>
 
             {/* Close button */}
@@ -129,7 +129,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
 
             {/* Scrollable content */}
             <div className="flex-1 overflow-y-auto px-6 pb-8 pt-2">
-              <div className="flex flex-col items-center text-center">
+              <div className="flex  items-center text-center">
                 <Image
                   src={member.avatar}
                   alt={`${member.name} Avatar`}
