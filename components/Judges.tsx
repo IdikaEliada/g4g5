@@ -129,7 +129,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
 
             {/* Scrollable content */}
             <div className="flex-1 overflow-y-auto px-6 pb-8 pt-2">
-              <div className="flex  items-center text-center">
+              <div className="flex flex-col items-center ">
                 <Image
                   src={member.avatar}
                   alt={`${member.name} Avatar`}
