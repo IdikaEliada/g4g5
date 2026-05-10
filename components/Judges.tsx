@@ -134,7 +134,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
                   <Image
                     src={member.avatar}
                     alt={`${member.name} Avatar`}
-                    width={48}
+                    width={60}
                     height={48}
                     className="rounded-full mb-4 ring-2 ring-yellow-400"
                   />
