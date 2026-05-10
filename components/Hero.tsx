@@ -68,7 +68,7 @@ export default function Hero() {
                 key={i}
                 src={logo.src}
                 alt={logo.alt}
-                className="h-20 object-contain shrink-0"
+                className="h-16 object-contain shrink-0"
               />))}
           </ScrollVelocityRow>
           <ScrollVelocityRow baseVelocity={10} direction={-1}>
