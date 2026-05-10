@@ -143,7 +143,7 @@ function JudgeModal({ member, onClose }: JudgeModalProps) {
                 <span className="text-yellow-400 text-sm font-medium mb-6">
                   {member.role}
                 </span>
-                <p className="text-zinc-300 text-base leading-7 max-w-lg">
+                <p className="text-zinc-700 text-base leading-7 max-w-lg">
                   {member.bio}
                 </p>
               </div>
