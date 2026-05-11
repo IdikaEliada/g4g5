@@ -363,7 +363,7 @@ function StepTwo({ data, errors, set }: StepProps) {
 
 function StepThree({ data, errors, set }: StepProps) {
   const rows: [string, string][] = [
-    ["Team", data.teamName],
+    ["Team", data.name],
     ["Category", data.category],
     ["Faculty", data.faculty],
     ["Department", data.department],
