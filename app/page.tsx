@@ -7,10 +7,8 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className=" w-full py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
+      <main className=" w-full pt-8 md:pt-16 lg:pt-32 py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
         
-        
-
         <section className="pt-8">
           <Hero />
         </section>
