@@ -10,6 +10,8 @@ export const metadata: Metadata = {
 export default function RegisterPage() {
   return (
     <main className="min-h-screen bg-zinc-900 text-white flex items-center justify-center px-4 py-16">
+      
+      <h1>Under Construction</h1>
       <RegistrationForm />
     </main>
   );
