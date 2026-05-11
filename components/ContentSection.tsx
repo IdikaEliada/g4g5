@@ -95,9 +95,9 @@ const ContentSection = () => {
             </p>
             <Link
               href="/register"
-              className="inline-flex font-accent py-4 items-center font-medium text-primary-600 hover:text-primary-800 "
+              className="inline-flex font-accent py-4 items-center font-bold text-primary-600 hover:text-primary-800 "
             >
-              Register
+              Debate
               <svg
                 className="ml-1 w-6 h-6"
                 fill="currentColor"
