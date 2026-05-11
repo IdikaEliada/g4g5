@@ -6,7 +6,7 @@ import { twMerge } from "tailwind-merge";
 import { ChevronRight, Loader2, CheckCircle2 } from "lucide-react";
 
 type FormData = {
-  teamName: string;
+  name: string;
   category: string;
   institution: string;
   captain: string;
@@ -28,7 +28,7 @@ const CATEGORIES = [
 ];
 
 const INITIAL: FormData = {
-  teamName: "",
+  name: "",
   category: "",
   institution: "",
   captain: "",
@@ -59,7 +59,7 @@ export default function RegistrationForm() {
   const validateStep = (s: number): boolean => {
     const errs: typeof errors = {};
     if (s === 1) {
-      if (!data.teamName.trim()) errs.teamName = "Team name is required";
+      if (!data.name.trim()) errs.name = "Team name is required";
       if (!data.category) errs.category = "Select a category";
       if (!data.institution.trim()) errs.institution = "Institution is required";
       if (!data.captain.trim()) errs.captain = "Captain name is required";
@@ -106,7 +106,7 @@ export default function RegistrationForm() {
         </h2>
         <p className="text-zinc-400 text-sm leading-relaxed">
           Thank you, <span className="text-white font-medium">{data.captain}</span>. Your
-          team <span className="text-white font-medium">"{data.teamName}"</span> has been
+          team <span className="text-white font-medium">"{data.name}"</span> has been
           registered. Check <span className="text-primary-400">{data.email}</span> for a
           confirmation.
         </p>
@@ -268,12 +268,12 @@ const inputCls =
 function StepOne({ data, errors, set }: StepProps) {
   return (
     <StepMotion>
-      <Field label="Team Name" error={errors.teamName}>
+      <Field label="Team Name" error={errors.name}>
         <input
           className={inputCls}
           placeholder="e.g. Quantum Coders"
-          value={data.teamName}
-          onChange={(e) => set("teamName", e.target.value)}
+          value={data.name}
+          onChange={(e) => set("name", e.target.value)}
         />
       </Field>
       <Field label="Competition Category" error={errors.category}>
@@ -363,7 +363,7 @@ function StepTwo({ data, errors, set }: StepProps) {
 
 function StepThree({ data, errors, set }: StepProps) {
   const rows: [string, string][] = [
-    ["Team", data.teamName],
+    ["Team", data.name],
     ["Category", data.category],
     ["Institution", data.institution],
     ["Captain", data.captain],
