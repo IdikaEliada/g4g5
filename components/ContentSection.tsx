@@ -84,24 +84,62 @@ const ContentSection = () => {
           <div className="font-light text-gray-500 ">
             <h2 className="mb-4 text-2xl md:3xl lg:text-4xl text-wrap-balance break-keep hyphens-none tracking-wide lg:tracking-normal font-extrabold text-gray-900 dark:text-white font-heading">
               <TextAnimate animation="slideLeft" by="character" className="break-keep hyphens-none break-normal">
-                How To Contest?
+                How To Contest
               </TextAnimate>
             </h2>
             <p className="mb-4">
               Register, Contest and Win a fair share of the ₦500k reward.
             </p>
             <p className="mb-4">
-              This is your chance to showcase your skills, compete, and win big across multiple categories:
+              Showcase your skills across multiple categories and compete for glory:
             </p>
-            <Link
-              href="/register"
-              className="inline-flex font-accent py-4 items-center font-bold text-primary-600 hover:text-primary-800 "
-            >
-              Debate:
-             
+      
+            {/* Debate */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Debate
             </Link>
             <p className="mb-4">
-              Participants (individuals or teams of 2) will argue for or against assigned motions on leadership, technology, economy, and innovation. Each side gets timed rounds for opening, rebuttal, and closing. Winners are decided by a panel of judges based on logic, evidence, delivery, and poise.
+              Argue for or against motions on leadership, tech, and innovation — solo or in pairs. Timed rounds, sharp rebuttals, and a judge panel that rewards logic, delivery, and poise.
+            </p>
+      
+            {/* Spoken Word */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Spoken Word
+            </Link>
+            <p className="mb-4">
+              Deliver a 3–5 minute original piece on leadership and transformation. Judged on creativity, emotional impact, and how powerfully you embody the Quantum Leap theme.
+            </p>
+      
+            {/* Essay Writing */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Essay Writing
+            </Link>
+            <p className="mb-4">
+              Submit a 1,000–1,500 word essay on innovation and industry leadership. Stand out with original thinking, solid research, and clear structure. Top entries may be published.
+            </p>
+      
+            {/* Quiz */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Quiz
+            </Link>
+            <p className="mb-4">
+              Fast-paced, buzzer-style rounds covering general knowledge, current affairs, tech, and entrepreneurship. Outlast every round to become the ultimate champion.
+            </p>
+      
+            {/* Content Creation */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Content Creation
+            </Link>
+            <p className="mb-4">
+              Create a short-form video or carousel post that captures "From Potential to Power." Judged on creativity, production quality, and message clarity. Submit before the deadline.
+            </p>
+      
+            {/* Pitch */}
+            <Link href="/register" className="inline-flex font-accent py-2 items-center font-bold text-primary-600 hover:text-primary-800">
+              Pitch — Business & Tech
+            </Link>
+            <p className="mb-4">
+              Got a business idea or a tech solution? Pitch it in 5 minutes to a panel of investors and mentors, then field 3 minutes of Q&A. Business and Tech pitches are judged separately — two tracks, two sets of winners.
             </p>
           </div>
 
