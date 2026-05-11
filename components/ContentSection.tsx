@@ -84,11 +84,11 @@ const ContentSection = () => {
           <div className="font-light text-gray-500 ">
             <h2 className="mb-4 text-2xl md:3xl lg:text-4xl text-wrap-balance break-keep hyphens-none tracking-wide lg:tracking-normal font-extrabold text-gray-900 dark:text-white font-heading">
               <TextAnimate animation="slideLeft" by="character" className="break-keep hyphens-none break-normal">
-                How to contest?
+                How To Contest?
               </TextAnimate>
             </h2>
             <p className="mb-4">
-              This is your chance to showcase your skills, compete, and win big across multiple categories:
+              Register, Contest and Win a fair share of the ₦500k reward.
             </p>
             <p className="mb-4">
               This is your chance to showcase your skills, compete, and win big across multiple categories:
