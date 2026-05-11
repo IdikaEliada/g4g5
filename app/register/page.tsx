@@ -16,13 +16,3 @@ export default function RegisterPage() {
     </main>
   );
 }
-
-export default function Register () {
-  return (
-  <>
-    
-      
-    </main>
-  </>
-)
-}
