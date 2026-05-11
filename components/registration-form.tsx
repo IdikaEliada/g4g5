@@ -220,7 +220,7 @@ export default function RegistrationForm() {
   );
 }
 
-// ─── Step Components ─────────────────────────────────────────────────────────
+// ─── Step Components 
 
 type StepProps = {
   data: FormData;
@@ -378,7 +378,7 @@ function StepThree({ data, errors, set }: StepProps) {
       <h3 className="text-sm font-semibold text-zinc-300 mb-1">
         Review your details
       </h3>
-      <div className="rounded-xl bg-zinc-900/60 border border-zinc-700/50 divide-y divide-zinc-700/40 text-sm overflow-hidden">
+      <div className="rounded-xl bg-zinc-100/60 border border-zinc-700/50 divide-y divide-zinc-700/40 text-sm overflow-hidden">
         {rows.map(([label, value]) => (
           <div key={label} className="flex gap-3 px-4 py-2.5">
             <span className="text-zinc-500 w-24 shrink-0">{label}</span>
