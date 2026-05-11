@@ -1,7 +1,7 @@
 //import ShiftingCountdown from '../components/CountDown'
 import Hero from '@/components/Hero'
 import ContentSection from '@/components/ContentSection'
-import NavBar from "@/components/NavBar"  
+
 
 export default function Home() {
   return (
