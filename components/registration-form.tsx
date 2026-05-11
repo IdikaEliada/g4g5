@@ -375,10 +375,10 @@ function StepThree({ data, errors, set }: StepProps) {
 
   return (
     <StepMotion>
-      <h3 className="text-sm font-semibold text-zinc-300 mb-1">
+      <h3 className="text-sm font-semibold text-zinc-700 mb-1">
         Review your details
       </h3>
-      <div className="rounded-xl bg-background border border-zinc-700/50 divide-y divide-zinc-700/40 text-sm overflow-hidden">
+      <div className="rounded-xl bg-background border border-zinc-300/50 divide-y divide-zinc-300/40 text-sm overflow-hidden">
         {rows.map(([label, value]) => (
           <div key={label} className="flex gap-3 px-4 py-2.5">
             <span className="text-zinc-500 w-24 shrink-0">{label}</span>
@@ -388,9 +388,9 @@ function StepThree({ data, errors, set }: StepProps) {
       </div>
 
       {data.abstract && (
-        <div className="rounded-xl bg-zinc-900/60 border border-zinc-700/50 px-4 py-3 text-sm">
+        <div className="rounded-xl bg-zinc-100/60 border border-zinc-700/50 px-4 py-3 text-sm">
           <p className="text-zinc-500 text-xs mb-1 uppercase tracking-wide">Abstract</p>
-          <p className="text-zinc-300 leading-relaxed">{data.abstract}</p>
+          <p className="text-zinc-700 leading-relaxed">{data.abstract}</p>
         </div>
       )}
 
@@ -399,7 +399,7 @@ function StepThree({ data, errors, set }: StepProps) {
           type="checkbox"
           checked={data.agreeToTerms}
           onChange={(e) => set("agreeToTerms", e.target.checked)}
-          className="mt-0.5 accent-yellow-400 size-4"
+          className="mt-0.5 accent-yellow-600 size-4"
         />
         <span className="text-xs text-zinc-400 leading-relaxed">
           I confirm that the information provided is accurate and I agree to the GFG 5.0
