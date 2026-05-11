@@ -147,7 +147,7 @@ export default function RegistrationForm() {
               <span
                 className={twMerge(
                   "text-[10px] font-medium transition-colors duration-300",
-                  step >= s.id ? "text-zinc-300" : "text-zinc-600"
+                  step >= s.id ? "text-zinc-500" : "text-zinc-800"
                 )}
               >
                 {s.label}
