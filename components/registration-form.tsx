@@ -119,7 +119,7 @@ export default function RegistrationForm() {
       {/* Header */}
       <div className="mb-8 text-center">
         
-        <h1 className="font-heading text-3xl sm:text-4xl font-bold leading-tight">
+        <h1 className="font-heading text-3xl sm:text-4xl font-bold text-black leading-tight">
           The Quantum Leap
         </h1>
         <p className="text-zinc-400 text-sm mt-1">From Potential to Power</p>
