@@ -97,20 +97,12 @@ const ContentSection = () => {
               href="/register"
               className="inline-flex font-accent py-4 items-center font-bold text-primary-600 hover:text-primary-800 "
             >
-              Debate
-              <svg
-                className="ml-1 w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              Debate:
+             
             </Link>
+            <p className="mb-4">
+              Participants (individuals or teams of 2) will argue for or against assigned motions on leadership, technology, economy, and innovation. Each side gets timed rounds for opening, rebuttal, and closing. Winners are decided by a panel of judges based on logic, evidence, delivery, and poise.
+            </p>
           </div>
 
           <div className="mask-[linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)] gap-4 mt-8">
