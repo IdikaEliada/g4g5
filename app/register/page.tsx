@@ -10,9 +10,10 @@ export const metadata: Metadata = {
 export default function RegisterPage() {
   return (
     <>
-      
-      <h1>Under Construction</h1>
-      <RegistrationForm />
+      <section className="mt-8">
+        <h1>Under Construction</h1>
+        <RegistrationForm />
+      </section>
     </>
   );
 }
