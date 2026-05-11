@@ -79,12 +79,12 @@ const ContentSection = () => {
           <TeamSection />
         </div>
       </section>
-      <section className="py-4 md:py-8 lg:py-16">
+      <section className="pb-4 md:pb-8 lg:pb-16">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-7xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 ">
             <h2 className="mb-4 text-2xl md:3xl lg:text-4xl text-wrap-balance break-keep hyphens-none tracking-wide lg:tracking-normal font-extrabold text-gray-900 dark:text-white font-heading">
               <TextAnimate animation="slideLeft" by="character" className="break-keep hyphens-none break-normal">
-                Are You Ready To Make The Leap?
+                How to contest?
               </TextAnimate>
             </h2>
             <p className="mb-4">
