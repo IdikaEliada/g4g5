@@ -123,8 +123,8 @@ export default function RegistrationForm() {
           The Quantum Leap
         </h1>
         <span className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
-        ₦500K
-      </span>
+          ₦500K
+        </span>
       </div>
 
       {/* Stepper */}
