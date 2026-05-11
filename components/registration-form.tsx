@@ -219,3 +219,196 @@ export default function RegistrationForm() {
     </div>
   );
 }
+
+// ─── Step Components ─────────────────────────────────────────────────────────
+
+type StepProps = {
+  data: FormData;
+  errors: Partial<Record<keyof FormData, string>>;
+  set: (field: keyof FormData, value: string | boolean) => void;
+};
+
+function StepMotion({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -20 }}
+      transition={{ duration: 0.2 }}
+      className="flex flex-col gap-5"
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function Field({
+  label,
+  error,
+  children,
+}: {
+  label: string;
+  error?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-xs font-medium text-zinc-400 uppercase tracking-wide">
+        {label}
+      </label>
+      {children}
+      {error && <p className="text-xs text-red-400">{error}</p>}
+    </div>
+  );
+}
+
+const inputCls =
+  "w-full bg-zinc-900/80 border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-yellow-400/60 focus:ring-1 focus:ring-yellow-400/30 transition-colors";
+
+function StepOne({ data, errors, set }: StepProps) {
+  return (
+    <StepMotion>
+      <Field label="Team Name" error={errors.teamName}>
+        <input
+          className={inputCls}
+          placeholder="e.g. Quantum Coders"
+          value={data.teamName}
+          onChange={(e) => set("teamName", e.target.value)}
+        />
+      </Field>
+      <Field label="Competition Category" error={errors.category}>
+        <select
+          className={twMerge(inputCls, "bg-zinc-900")}
+          value={data.category}
+          onChange={(e) => set("category", e.target.value)}
+        >
+          <option value="">Select a category…</option>
+          {CATEGORIES.map((c) => (
+            <option key={c} value={c}>{c}</option>
+          ))}
+        </select>
+      </Field>
+      <Field label="Institution / Department" error={errors.institution}>
+        <input
+          className={inputCls}
+          placeholder="e.g. FUTO — Computer Science"
+          value={data.institution}
+          onChange={(e) => set("institution", e.target.value)}
+        />
+      </Field>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <Field label="Team Captain" error={errors.captain}>
+          <input
+            className={inputCls}
+            placeholder="Full name"
+            value={data.captain}
+            onChange={(e) => set("captain", e.target.value)}
+          />
+        </Field>
+        <Field label="Phone" error={errors.phone}>
+          <input
+            className={inputCls}
+            placeholder="+234…"
+            value={data.phone}
+            onChange={(e) => set("phone", e.target.value)}
+          />
+        </Field>
+      </div>
+      <Field label="Email Address" error={errors.email}>
+        <input
+          className={inputCls}
+          type="email"
+          placeholder="captain@email.com"
+          value={data.email}
+          onChange={(e) => set("email", e.target.value)}
+        />
+      </Field>
+      <Field label="Other Team Members (optional)" error={errors.members}>
+        <input
+          className={inputCls}
+          placeholder="e.g. John Doe, Jane Smith"
+          value={data.members}
+          onChange={(e) => set("members", e.target.value)}
+        />
+      </Field>
+    </StepMotion>
+  );
+}
+
+function StepTwo({ data, errors, set }: StepProps) {
+  return (
+    <StepMotion>
+      <Field label="Project / Idea Title" error={errors.projectTitle}>
+        <input
+          className={inputCls}
+          placeholder="Give your project a name"
+          value={data.projectTitle}
+          onChange={(e) => set("projectTitle", e.target.value)}
+        />
+      </Field>
+      <Field label="Abstract / Brief Description" error={errors.abstract}>
+        <textarea
+          className={twMerge(inputCls, "resize-none min-h-36")}
+          placeholder="Describe what you're building and why it matters (min 30 chars)…"
+          value={data.abstract}
+          onChange={(e) => set("abstract", e.target.value)}
+        />
+        <p className="text-[11px] text-zinc-600 text-right">
+          {data.abstract.trim().length} chars
+        </p>
+      </Field>
+    </StepMotion>
+  );
+}
+
+function StepThree({ data, errors, set }: StepProps) {
+  const rows: [string, string][] = [
+    ["Team", data.teamName],
+    ["Category", data.category],
+    ["Institution", data.institution],
+    ["Captain", data.captain],
+    ["Email", data.email],
+    ["Phone", data.phone],
+    ["Members", data.members || "—"],
+    ["Project", data.projectTitle],
+  ];
+
+  return (
+    <StepMotion>
+      <h3 className="text-sm font-semibold text-zinc-300 mb-1">
+        Review your details
+      </h3>
+      <div className="rounded-xl bg-zinc-900/60 border border-zinc-700/50 divide-y divide-zinc-700/40 text-sm overflow-hidden">
+        {rows.map(([label, value]) => (
+          <div key={label} className="flex gap-3 px-4 py-2.5">
+            <span className="text-zinc-500 w-24 shrink-0">{label}</span>
+            <span className="text-zinc-200 truncate">{value}</span>
+          </div>
+        ))}
+      </div>
+
+      {data.abstract && (
+        <div className="rounded-xl bg-zinc-900/60 border border-zinc-700/50 px-4 py-3 text-sm">
+          <p className="text-zinc-500 text-xs mb-1 uppercase tracking-wide">Abstract</p>
+          <p className="text-zinc-300 leading-relaxed">{data.abstract}</p>
+        </div>
+      )}
+
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={data.agreeToTerms}
+          onChange={(e) => set("agreeToTerms", e.target.checked)}
+          className="mt-0.5 accent-yellow-400 size-4"
+        />
+        <span className="text-xs text-zinc-400 leading-relaxed">
+          I confirm that the information provided is accurate and I agree to the GFG 5.0
+          participation terms and code of conduct.
+        </span>
+      </label>
+      {errors.agreeToTerms && (
+        <p className="text-xs text-red-400 -mt-3">{errors.agreeToTerms}</p>
+      )}
+    </StepMotion>
+  );
+}
