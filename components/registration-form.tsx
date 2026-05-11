@@ -119,8 +119,8 @@ export default function RegistrationForm() {
       {/* Header */}
       <div className="mb-8 text-center">
         
-        <h1 className="font-heading text-3xl sm:text-4xl font-bold text-black leading-tight">
-          Register, participate and Win
+        <h1 className="font-heading text-lg sm:text-4xl font-bold text-black leading-tight">
+          Register, Participate and Win
         </h1>
         <h1 className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
           ₦500K
