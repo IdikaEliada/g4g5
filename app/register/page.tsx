@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function RegisterPage() {
   return (
-    <main className="min-h-screen bg-zinc-900 text-white flex items-center justify-center px-4 py-16">
+    <main className=" w-full py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
       
       <h1>Under Construction</h1>
       <RegistrationForm />
@@ -20,7 +20,7 @@ export default function RegisterPage() {
 export default function Register () {
   return (
   <>
-    <main className=" w-full py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
+    
       
     </main>
   </>
