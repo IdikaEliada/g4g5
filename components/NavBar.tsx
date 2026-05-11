@@ -43,7 +43,7 @@ const DATA = {
       },
       Email: {
         name: "Send Email",
-        url: "#",
+        url: "https://wa.me/2347030997131",
         icon: Icons.email,
       },
     },
