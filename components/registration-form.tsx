@@ -10,9 +10,7 @@ type FormData = {
   category: string;
   faculty: string;
   department: string;
-  email: string;
   phone: string;
-  members: string;
   projectTitle: string;
   abstract: string;
   agreeToTerms: boolean;
@@ -32,9 +30,7 @@ const INITIAL: FormData = {
   category: "",
   faculty: "",
   department: "",
-  email: "",
   phone: "",
-  members: "",
   projectTitle: "",
   abstract: "",
   agreeToTerms: false,
@@ -42,7 +38,7 @@ const INITIAL: FormData = {
 
 const steps = [
   { id: 1, label: "Personal Info" },
-  { id: 2, label: "Project" },
+  { id: 2, label: "Payment" },
   { id: 3, label: "Confirm" },
 ];
 
@@ -62,9 +58,7 @@ export default function RegistrationForm() {
       if (!data.name.trim()) errs.name = "Full name is required";
       if (!data.category) errs.category = "Select a category";
       if (!data.faculty.trim()) errs.faculty = "Faculty is required";
-      if (!data.department.trim()) errs.department = "Department name is required";
-      if (!data.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
-        errs.email = "Valid email required";
+      if (!data.department.trim()) errs.department = "Department is required";
       if (!data.phone.trim()) errs.phone = "Phone number is required";
     }
     if (s === 2) {
