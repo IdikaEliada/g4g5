@@ -68,10 +68,10 @@ const DATA = {
   ],
   contact: {
     social: {
-      GitHub: {
-        name: "GitHub",
+      Whatsapp: {
+        name: "Whatsapp",
         url: "#",
-        icon: Icons.github,
+        icon: Icons.whatsapp,
       },
       LinkedIn: {
         name: "LinkedIn",
