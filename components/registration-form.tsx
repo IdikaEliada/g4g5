@@ -265,7 +265,7 @@ function StepOne({ data, errors, set }: StepProps) {
       <Field label="Full Name" error={errors.name}>
         <input
           className={inputCls}
-          placeholder="e.g. Quantum Coders"
+          placeholder="Enter full name"
           value={data.name}
           onChange={(e) => set("name", e.target.value)}
         />
@@ -282,10 +282,10 @@ function StepOne({ data, errors, set }: StepProps) {
           ))}
         </select>
       </Field>
-      <Field label="Faculty / Department" error={errors.faculty}>
+      <Field label="Faculty" error={errors.faculty}>
         <input
           className={inputCls}
-          placeholder="e.g. FUTO — Computer Science"
+          placeholder="Select Faculty"
           value={data.faculty}
           onChange={(e) => set("faculty", e.target.value)}
         />
@@ -294,7 +294,7 @@ function StepOne({ data, errors, set }: StepProps) {
         <Field label="Department" error={errors.department}>
           <input
             className={inputCls}
-            placeholder="Full name"
+            placeholder="eg. Software Engineering"
             value={data.department}
             onChange={(e) => set("department", e.target.value)}
           />
@@ -302,29 +302,14 @@ function StepOne({ data, errors, set }: StepProps) {
         <Field label="Phone" error={errors.phone}>
           <input
             className={inputCls}
-            placeholder="+234…"
+            placeholder="preferably whatsapp contact"
             value={data.phone}
             onChange={(e) => set("phone", e.target.value)}
           />
         </Field>
       </div>
-      <Field label="Email Address" error={errors.email}>
-        <input
-          className={inputCls}
-          type="email"
-          placeholder="department@email.com"
-          value={data.email}
-          onChange={(e) => set("email", e.target.value)}
-        />
-      </Field>
-      <Field label="Other Team Members (optional)" error={errors.members}>
-        <input
-          className={inputCls}
-          placeholder="e.g. John Doe, Jane Smith"
-          value={data.members}
-          onChange={(e) => set("members", e.target.value)}
-        />
-      </Field>
+      
+      
     </StepMotion>
   );
 }
