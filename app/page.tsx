@@ -6,9 +6,10 @@ import NavBar from "@/components/NavBar"
 export default function Home() {
   return (
     <>
+      <NavBar />
       <main className=" w-full py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
         
-        <NavBar />
+        
 
         <section className="pt-8">
           <Hero />
