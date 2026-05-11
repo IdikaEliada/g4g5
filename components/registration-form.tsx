@@ -297,7 +297,7 @@ function StepOne({ data, errors, set }: StepProps) {
         />
       </Field>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <Field label="Team Department" error={errors.department}>
+        <Field label="Department" error={errors.department}>
           <input
             className={inputCls}
             placeholder="Full name"
@@ -363,7 +363,7 @@ function StepTwo({ data, errors, set }: StepProps) {
 
 function StepThree({ data, errors, set }: StepProps) {
   const rows: [string, string][] = [
-    ["Team", data.name],
+    ["Name", data.name],
     ["Category", data.category],
     ["Faculty", data.faculty],
     ["Department", data.department],
