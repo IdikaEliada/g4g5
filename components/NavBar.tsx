@@ -79,6 +79,12 @@ const DATA = {
       },
     },
   },
+  CTA: [
+    {
+      href: "/register",
+      label: ""
+    }
+  ]
 }
 
 export default function NavBar() {
