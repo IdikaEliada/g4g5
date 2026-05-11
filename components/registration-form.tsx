@@ -253,11 +253,11 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-xs font-medium text-zinc-400 uppercase tracking-wide">
+      <label className="text-xs font-medium text-zinc-600 uppercase tracking-wide">
         {label}
       </label>
       {children}
-      {error && <p className="text-xs text-red-400">{error}</p>}
+      {error && <p className="text-xs text-red-600">{error}</p>}
     </div>
   );
 }
