@@ -73,17 +73,7 @@ const DATA = {
         url: "https://wa.me/2347043570945",
         icon: Icons.whatsapp,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "#",
-        icon: Icons.linkedin,
-      },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
-      },
-      email: {
+      Email: {
         name: "Send Email",
         url: "#",
         icon: Icons.email,
