@@ -178,7 +178,7 @@ export default function RegistrationForm() {
           {step > 1 ? (
             <button
               onClick={back}
-              className="px-5 py-2.5 rounded-xl text-sm text-zinc-400 border border-zinc-700 hover:border-zinc-500 hover:text-white transition-colors"
+              className="px-5 py-2.5 rounded-xl text-sm text-zinc-900 border border-zinc-700 hover:border-zinc-500 hover:text-white transition-colors"
             >
               Back
             </button>
@@ -189,7 +189,7 @@ export default function RegistrationForm() {
           {step < 3 ? (
             <button
               onClick={next}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-400 text-zinc-900 hover:bg-primary-300 transition-colors"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-900 text-slate-100 hover:bg-primary-300 transition-colors"
             >
               Continue <ChevronRight className="size-4" />
             </button>
