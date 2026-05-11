@@ -139,6 +139,12 @@ export default function NavBar() {
             </DockIcon>
           ))}
           <Separator orientation="vertical" className="h-full" />
+          {DATA.CTA.map((action) => (
+            <button>
+              Register
+            </button>
+          ))
+          }
         </Dock>
       </TooltipProvider>
     </div>
