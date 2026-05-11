@@ -82,7 +82,7 @@ const DATA = {
   CTA: [
     {
       href: "/register",
-      label: ""
+      label: "Register"
     }
   ]
 }
