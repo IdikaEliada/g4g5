@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import  localFont  from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import NavBar from "@/components/NavBar"
 
 //const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
