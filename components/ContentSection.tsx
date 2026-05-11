@@ -88,10 +88,10 @@ const ContentSection = () => {
               </TextAnimate>
             </h2>
             <p className="mb-4">
-              This is not just another competition — it&apos;s your quantum leap from potential to power.
+              This is your chance to showcase your skills, compete, and win big across multiple categories:
             </p>
             <p className="mb-4">
-              GFG 5.0 brings together the brightest minds across Nigeria to compete, create, and claim their place among the next generation of industry leaders.
+              This is your chance to showcase your skills, compete, and win big across multiple categories:
             </p>
             <Link
               href="/register"
