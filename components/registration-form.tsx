@@ -118,10 +118,8 @@ export default function RegistrationForm() {
     <div className="w-full max-w-lg">
       {/* Header */}
       <div className="mb-8 text-center">
-        <p className="text-yellow-400 text-xs uppercase tracking-widest font-medium mb-2">
-          Going for Gold 5.0
-        </p>
-        <h1 className="font-heading text-3xl sm:text-4xl font-bold text-white leading-tight">
+        
+        <h1 className="font-heading text-3xl sm:text-4xl font-bold leading-tight">
           The Quantum Leap
         </h1>
         <p className="text-zinc-400 text-sm mt-1">From Potential to Power</p>
