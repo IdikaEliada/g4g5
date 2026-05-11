@@ -107,7 +107,7 @@ export default function NavBar() {
               </Tooltip>
             </DockIcon>
           ))}
-          <Separator orientation="vertical" className="h-full" />
+          <Separator orientation="vertical" className="h-full opacity-20" />
           {DATA.CTA.map((action) => (
             <button className="text-sm md:text-md  bg-black text-slate-100 p-2 m-4 rounded-sm">
               <Link href = { action.href } aria-label = { action.label }
