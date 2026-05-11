@@ -6,8 +6,7 @@ import NavBar from "@/components/NavBar"
 export default function Home() {
   return (
     <>
-      <NavBar />
-      <main className=" w-full pt-20 md:pt-16 lg:pt-32 py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16">
+      
         
         <section className="mt-8">
           <Hero />
@@ -19,7 +18,7 @@ export default function Home() {
           <ShiftingCountdown />
         </section> */}
         
-      </main>
+      
     </>
   )
 }
