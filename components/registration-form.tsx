@@ -100,14 +100,14 @@ export default function RegistrationForm() {
         animate={{ opacity: 1, scale: 1 }}
         className="flex flex-col items-center gap-6 text-center max-w-md"
       >
-        <CheckCircle2 className="size-16 text-yellow-400" strokeWidth={1.5} />
-        <h2 className="font-heading text-3xl font-bold text-yellow-400">
+        <CheckCircle2 className="size-16 text-primary-400" strokeWidth={1.5} />
+        <h2 className="font-heading text-3xl font-bold text-primary-400">
           Registration Received!
         </h2>
         <p className="text-zinc-400 text-sm leading-relaxed">
           Thank you, <span className="text-white font-medium">{data.captain}</span>. Your
           team <span className="text-white font-medium">"{data.teamName}"</span> has been
-          registered. Check <span className="text-yellow-400">{data.email}</span> for a
+          registered. Check <span className="text-primary-400">{data.email}</span> for a
           confirmation.
         </p>
       </motion.div>
@@ -136,9 +136,9 @@ export default function RegistrationForm() {
                 className={twMerge(
                   "size-8 rounded-full flex items-center justify-center text-xs font-bold border transition-colors duration-300",
                   step > s.id
-                    ? "bg-yellow-400 border-yellow-400 text-zinc-900"
+                    ? "bg-primary-400 border-primary-400 text-zinc-900"
                     : step === s.id
-                    ? "border-yellow-400 text-yellow-400 bg-transparent"
+                    ? "border-primary-400 text-primary-400 bg-transparent"
                     : "border-zinc-700 text-zinc-600 bg-transparent"
                 )}
               >
@@ -157,7 +157,7 @@ export default function RegistrationForm() {
               <div
                 className={twMerge(
                   "h-px w-16 mb-4 transition-colors duration-500",
-                  step > s.id ? "bg-yellow-400" : "bg-zinc-700"
+                  step > s.id ? "bg-primary-400" : "bg-zinc-700"
                 )}
               />
             )}
@@ -195,7 +195,7 @@ export default function RegistrationForm() {
           {step < 3 ? (
             <button
               onClick={next}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-yellow-400 text-zinc-900 hover:bg-yellow-300 transition-colors"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-400 text-zinc-900 hover:bg-primary-300 transition-colors"
             >
               Continue <ChevronRight className="size-4" />
             </button>
@@ -203,7 +203,7 @@ export default function RegistrationForm() {
             <button
               onClick={submit}
               disabled={submitting}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-yellow-400 text-zinc-900 hover:bg-yellow-300 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-400 text-zinc-900 hover:bg-primary-300 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {submitting ? (
                 <>
@@ -263,7 +263,7 @@ function Field({
 }
 
 const inputCls =
-  "w-full bg-zinc-900/80 border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-yellow-400/60 focus:ring-1 focus:ring-yellow-400/30 transition-colors";
+  "w-full bg-zinc-900/80 border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary-400/60 focus:ring-1 focus:ring-primary-400/30 transition-colors";
 
 function StepOne({ data, errors, set }: StepProps) {
   return (
@@ -399,7 +399,7 @@ function StepThree({ data, errors, set }: StepProps) {
           type="checkbox"
           checked={data.agreeToTerms}
           onChange={(e) => set("agreeToTerms", e.target.checked)}
-          className="mt-0.5 accent-yellow-600 size-4"
+          className="mt-0.5 accent-primary-600 size-4"
         />
         <span className="text-xs text-zinc-400 leading-relaxed">
           I confirm that the information provided is accurate and I agree to the GFG 5.0
