@@ -19,7 +19,6 @@ export default function Hero() {
           "mask-[linear-gradient(to_bottom_left,#F8F8FF_60,transparent,transparent)]"
         )}
       />
-      <NavBar />
       <div className="flex items-center justify-center relative">
         <div className="flex flex-col justify-star items-center md:items-start gap-6 text-center  sm:text-left">
           <h1 className=" text-[clamp(3rem,10vw,6rem)] font-heading text-7xl font-semibold text-black pb-2 max-w-4xl">
