@@ -4,7 +4,7 @@ import RegistrationForm from "@/components/registration-form";
 export const metadata: Metadata = {
   title: "Register — Going for Gold 5.0",
   description:
-    "Register your team for Going for Gold 5.0: The Quantum Leap — From Potential to Power.",
+    "Win ₦500K plus other prices.You stand a chance to win a share of the reward by registering for the Going for Gold 5.0: The Quantum Leap — From Potential to Power.",
 };
 
 export default function RegisterPage() {
