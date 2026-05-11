@@ -347,7 +347,6 @@ function StepThree({ data, errors, set }: StepProps) {
     ["Faculty", data.faculty],
     ["Department", data.department],
     ["Phone", data.phone],
-    ["Members", data.members || "—"],
     ["Project", data.projectTitle],
   ];
 
