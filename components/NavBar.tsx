@@ -140,7 +140,7 @@ export default function NavBar() {
           ))}
           <Separator orientation="vertical" className="h-full" />
           {DATA.CTA.map((action) => (
-            <button>
+            <button className="text-sm bg-black text-slate-100">
               Register
             </button>
           ))
