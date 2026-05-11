@@ -8,7 +8,7 @@ import { ChevronRight, Loader2, CheckCircle2 } from "lucide-react";
 type FormData = {
   name: string;
   category: string;
-  institution: string;
+  faculty: string;
   captain: string;
   email: string;
   phone: string;
@@ -30,7 +30,7 @@ const CATEGORIES = [
 const INITIAL: FormData = {
   name: "",
   category: "",
-  institution: "",
+  faculty: "",
   captain: "",
   email: "",
   phone: "",
@@ -61,7 +61,7 @@ export default function RegistrationForm() {
     if (s === 1) {
       if (!data.name.trim()) errs.name = "Team name is required";
       if (!data.category) errs.category = "Select a category";
-      if (!data.institution.trim()) errs.institution = "Institution is required";
+      if (!data.faculty.trim()) errs.faculty = "Faculty is required";
       if (!data.captain.trim()) errs.captain = "Captain name is required";
       if (!data.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
         errs.email = "Valid email required";
@@ -288,12 +288,12 @@ function StepOne({ data, errors, set }: StepProps) {
           ))}
         </select>
       </Field>
-      <Field label="Institution / Department" error={errors.institution}>
+      <Field label="Faculty / Department" error={errors.faculty}>
         <input
           className={inputCls}
           placeholder="e.g. FUTO — Computer Science"
-          value={data.institution}
-          onChange={(e) => set("institution", e.target.value)}
+          value={data.faculty}
+          onChange={(e) => set("faculty", e.target.value)}
         />
       </Field>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -363,9 +363,9 @@ function StepTwo({ data, errors, set }: StepProps) {
 
 function StepThree({ data, errors, set }: StepProps) {
   const rows: [string, string][] = [
-    ["Team", data.name],
+    ["Team", data.teamName],
     ["Category", data.category],
-    ["Institution", data.institution],
+    ["Faculty", data.faculty],
     ["Captain", data.captain],
     ["Email", data.email],
     ["Phone", data.phone],
