@@ -99,7 +99,7 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full", "antialiased", aptos.variable, monumentExtended.variable, clash.variable)}
     >
-      <body className="min-h-full text-[clamp(25px, 1.5vw, 30px)]">
+      <body className="min-h-full text-[clamp(20px, 1.5vw, 30px)]">
         <NavBar /> 
         <main className = " w-full pt-20 md:pt-16 lg:pt-32 py-8 md:py-16 lg:py-32 px-4 md:px-8 lg:px-16" >
           {children}
