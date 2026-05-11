@@ -17,12 +17,12 @@ type FormData = {
 };
 
 const CATEGORIES = [
-  "Software Engineering",
-  "Hardware & Embedded Systems",
-  "AI & Machine Learning",
-  "UI/UX & Design",
-  "Robotics",
-  "Other",
+  "Essay Writing",
+  "Debates",
+  "Spoken Words",
+  "Quizzes",
+  "Content Creation",
+  "Business Pitch / Tech Startup"
 ];
 
 const INITIAL: FormData = {
