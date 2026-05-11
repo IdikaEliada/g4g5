@@ -166,7 +166,7 @@ export default function RegistrationForm() {
       </div>
 
       {/* Form Card */}
-      <div className=" border border-zinc-300/60 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
+      <div className="bg-zinc-100/60 border border-zinc-300/60 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
         <AnimatePresence mode="wait">
           {step === 1 && (
             <StepOne key="s1" data={data} errors={errors} set={set} />
