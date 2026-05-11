@@ -203,7 +203,7 @@ export default function RegistrationForm() {
             <button
               onClick={submit}
               disabled={submitting}
-              className="flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-900 text-slate-100 hover:bg-primary-300 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+              className="font-accent flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold bg-primary-900 text-slate-100 hover:bg-primary-300 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {submitting ? (
                 <>
