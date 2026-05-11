@@ -263,7 +263,7 @@ function Field({
 }
 
 const inputCls =
-  "w-full bg-zinc-900/80 border border-zinc-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary-400/60 focus:ring-1 focus:ring-primary-400/30 transition-colors";
+  "w-full bg-zinc-100/80 border border-zinc-300 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-zinc-800 focus:outline-none focus:border-primary-600/60 focus:ring-1 focus:ring-primary-400/30 transition-colors";
 
 function StepOne({ data, errors, set }: StepProps) {
   return (
