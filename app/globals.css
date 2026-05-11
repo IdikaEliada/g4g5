@@ -12,6 +12,17 @@
   --font-body: var(--font-aptos);
   --font-heading: var(--font-monument-extended);
   --font-accent: var(--font-clash);
+  --color-primary-50: #eef2fd;
+  --color-primary-100: #d9e1fb;
+  --color-primary-200: #b3c4f7;
+  --color-primary-300: #8da6f3;
+  --color-primary-400: #6789ef;
+  --color-primary-500: #4273f0;  /* your #4273f0 */
+  --color-primary-600: #596ad9;  /* your #596ad9 */
+  --color-primary-700: #3a4fb5;
+  --color-primary-800: #253490;
+  --color-primary-900: #111a6e;
+  --color-primary-950: #060257;  /*
 }
 
 * {
