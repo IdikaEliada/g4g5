@@ -122,9 +122,9 @@ export default function RegistrationForm() {
         <h1 className="font-heading text-3xl sm:text-4xl font-bold text-black leading-tight">
           The Quantum Leap
         </h1>
-        <span className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
+        <h1 className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
           ₦500K
-        </span>
+        </h1>
       </div>
 
       {/* Stepper */}
