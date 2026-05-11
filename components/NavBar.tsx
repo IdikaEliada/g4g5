@@ -141,7 +141,11 @@ export default function NavBar() {
           <Separator orientation="vertical" className="h-full" />
           {DATA.CTA.map((action) => (
             <button className="text-sm md:text-md  bg-black text-slate-100 p-2 rounded-sm">
-              Register
+              <Link href = { action.href } aria-label = { action.label }
+              >
+                {action.label}
+              </Link>
+              
             </button>
             ))
           }
