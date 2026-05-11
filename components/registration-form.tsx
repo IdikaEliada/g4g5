@@ -122,7 +122,7 @@ export default function RegistrationForm() {
         <h3 className="font-accent text-xl md:text-4xl font-bold text-black leading-tight">
           Register, Participate and Win
         </h3>
-        <h1 className="font-heading pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl md:text-9xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
+        <h1 className="font-heading pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl md:text-9xl lg:text-12xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
           ₦500K
         </h1>
       </div>
