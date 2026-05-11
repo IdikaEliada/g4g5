@@ -133,6 +133,7 @@ export default function NavBar() {
               </Tooltip>
             </DockIcon>
           ))}
+          <Separator orientation="vertical" className="h-full" />
         </Dock>
       </TooltipProvider>
     </div>
