@@ -101,7 +101,7 @@ export default function RegistrationForm() {
         <p className="text-zinc-400 text-sm leading-relaxed">
           Thank you, <span className="text-white font-medium">{data.department}</span>. Your
           team <span className="text-white font-medium">"{data.name}"</span> has been
-          registered. Check <span className="text-primary-400">Your Email</span> for a
+          registered. Check <span className="text-primary-400">Your WhatsApp</span> for a
           confirmation.
         </p>
       </motion.div>
