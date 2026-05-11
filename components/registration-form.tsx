@@ -9,7 +9,7 @@ type FormData = {
   name: string;
   category: string;
   faculty: string;
-  captain: string;
+  department: string;
   email: string;
   phone: string;
   members: string;
@@ -31,7 +31,7 @@ const INITIAL: FormData = {
   name: "",
   category: "",
   faculty: "",
-  captain: "",
+  department: "",
   email: "",
   phone: "",
   members: "",
@@ -62,7 +62,7 @@ export default function RegistrationForm() {
       if (!data.name.trim()) errs.name = "Team name is required";
       if (!data.category) errs.category = "Select a category";
       if (!data.faculty.trim()) errs.faculty = "Faculty is required";
-      if (!data.captain.trim()) errs.captain = "Captain name is required";
+      if (!data.department.trim()) errs.department = "Department name is required";
       if (!data.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
         errs.email = "Valid email required";
       if (!data.phone.trim()) errs.phone = "Phone number is required";
@@ -105,7 +105,7 @@ export default function RegistrationForm() {
           Registration Received!
         </h2>
         <p className="text-zinc-400 text-sm leading-relaxed">
-          Thank you, <span className="text-white font-medium">{data.captain}</span>. Your
+          Thank you, <span className="text-white font-medium">{data.department}</span>. Your
           team <span className="text-white font-medium">"{data.name}"</span> has been
           registered. Check <span className="text-primary-400">{data.email}</span> for a
           confirmation.
@@ -297,12 +297,12 @@ function StepOne({ data, errors, set }: StepProps) {
         />
       </Field>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <Field label="Team Captain" error={errors.captain}>
+        <Field label="Team Department" error={errors.department}>
           <input
             className={inputCls}
             placeholder="Full name"
-            value={data.captain}
-            onChange={(e) => set("captain", e.target.value)}
+            value={data.department}
+            onChange={(e) => set("department", e.target.value)}
           />
         </Field>
         <Field label="Phone" error={errors.phone}>
@@ -318,7 +318,7 @@ function StepOne({ data, errors, set }: StepProps) {
         <input
           className={inputCls}
           type="email"
-          placeholder="captain@email.com"
+          placeholder="department@email.com"
           value={data.email}
           onChange={(e) => set("email", e.target.value)}
         />
@@ -366,7 +366,7 @@ function StepThree({ data, errors, set }: StepProps) {
     ["Team", data.teamName],
     ["Category", data.category],
     ["Faculty", data.faculty],
-    ["Captain", data.captain],
+    ["Department", data.department],
     ["Email", data.email],
     ["Phone", data.phone],
     ["Members", data.members || "—"],
