@@ -10,7 +10,7 @@ export default function Home() {
         
         <NavBar />
 
-        <section>
+        <section className="pt-8">
           <Hero />
         </section>
         <section>
