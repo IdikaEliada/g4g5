@@ -58,7 +58,7 @@ const DATA = {
 
 export default function NavBar() {
   return (
-    <div className="fixed z-200 flex flex-col right-0 w-full left-0 top-4 items-center justify-center">
+    <div className="fixed z-200 flex flex-col right-0 w-full left-0 items-center justify-center">
       {/*<span className="pointer-events-none bg-linear-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl leading-none font-semibold whitespace-pre-wrap text-transparent dark:from-white dark:to-slate-900/10">
         Dock
       </span>*/}
