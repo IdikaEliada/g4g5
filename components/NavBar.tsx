@@ -70,7 +70,7 @@ const DATA = {
     social: {
       Whatsapp: {
         name: "Whatsapp",
-        url: "#",
+        url: "https://wa.me/2347043570945",
         icon: Icons.whatsapp,
       },
       LinkedIn: {
