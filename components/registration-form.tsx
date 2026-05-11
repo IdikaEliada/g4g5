@@ -41,7 +41,7 @@ const INITIAL: FormData = {
 };
 
 const steps = [
-  { id: 1, label: "Team Info" },
+  { id: 1, label: "Personal Info" },
   { id: 2, label: "Project" },
   { id: 3, label: "Confirm" },
 ];
@@ -59,7 +59,7 @@ export default function RegistrationForm() {
   const validateStep = (s: number): boolean => {
     const errs: typeof errors = {};
     if (s === 1) {
-      if (!data.name.trim()) errs.name = "Team name is required";
+      if (!data.name.trim()) errs.name = "Full name is required";
       if (!data.category) errs.category = "Select a category";
       if (!data.faculty.trim()) errs.faculty = "Faculty is required";
       if (!data.department.trim()) errs.department = "Department name is required";
@@ -268,7 +268,7 @@ const inputCls =
 function StepOne({ data, errors, set }: StepProps) {
   return (
     <StepMotion>
-      <Field label="Team Name" error={errors.name}>
+      <Field label="Full Name" error={errors.name}>
         <input
           className={inputCls}
           placeholder="e.g. Quantum Coders"
