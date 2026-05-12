@@ -415,13 +415,13 @@ function StepTwo({ data, errors, set }: StepProps) {
       </div>
 
       {/* Primary CTA — OPay */}
-      <Link
-        href={`https://${OPAY_DEEP_LINK(amount)}`}
+      <button
+        onClick = { handleOpayPay }
         className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#00B050] hover:bg-[#009940] text-white font-semibold text-sm transition-colors"
       >
         {/* OPay green */}
         Pay ₦{amount.toLocaleString()} with OPay
-      </Link>
+      </button>
 
       {/* Other methods toggle */}
       <button
