@@ -44,18 +44,6 @@ const ACCOUNT = {
 const OPAY_DEEP_LINK = (amount: number) =>
   `opay://transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`; // TODO: verify format
   
-const handleOpayPay = () => {
-  const deepLink = `opay://com.opay.payment/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
-  const fallback = `https://web.opayweb.com/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
-
-  window.location.href = deepLink;
-
-  // If app doesn't open within 1.5s, redirect to web fallback
-  setTimeout(() => {
-    window.location.href = fallback;
-  }, 1500);
-};
-
 const getAmount = (category: string) =>
   category === "Business Pitch / Tech Startup" ? 3000 : 2500;
 
