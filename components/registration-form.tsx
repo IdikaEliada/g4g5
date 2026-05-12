@@ -30,8 +30,7 @@ const INITIAL: FormData = {
   faculty: "",
   department: "",
   phone: "",
-  projectTitle: "",
-  abstract: "",
+  paymentRef: "",
   agreeToTerms: false,
 };
 
