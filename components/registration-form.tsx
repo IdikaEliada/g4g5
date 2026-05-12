@@ -404,7 +404,7 @@ function StepTwo({ data, errors, set }: StepProps) {
 
       {/* Primary CTA — OPay */}
       <Link
-        href={OPAY_DEEP_LINK(amount)}
+        href={`https://${OPAY_DEEP_LINK(amount)}`}
         className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#00B050] hover:bg-[#009940] text-white font-semibold text-sm transition-colors"
       >
         {/* OPay green */}
