@@ -345,13 +345,13 @@ function StepTwo({ data, errors, set }: StepProps) {
 
 function StepThree({ data, errors, set }: StepProps) {
   const rows: [string, string][] = [
-    ["Name", data.name],
-    ["Category", data.category],
-    ["Faculty", data.faculty],
-    ["Department", data.department],
-    ["Phone", data.phone],
-    ["Project", data.projectTitle],
-  ];
+      ["Name", data.name],
+      ["Category", data.category],
+      ["Faculty", data.faculty],
+      ["Department", data.department],
+      ["Phone", data.phone],
+      ["Txn Ref", data.paymentRef],
+    ];
 
   return (
     <StepMotion>
