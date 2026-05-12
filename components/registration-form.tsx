@@ -34,6 +34,12 @@ const INITIAL: FormData = {
   agreeToTerms: false,
 };
 
+const ACCOUNT = {
+  numbers: "9051419261",
+  name: "IDIKA PATRICK IBIAM",
+  bank: "Palm pay",
+};
+
 const steps = [
   { id: 1, label: "Personal Info" },
   { id: 2, label: "Payment" },
