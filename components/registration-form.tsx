@@ -66,9 +66,8 @@ export default function RegistrationForm() {
       if (!data.phone.trim()) errs.phone = "Phone number is required";
     }
     if (s === 2) {
-      if (!data.projectTitle.trim()) errs.projectTitle = "Project title is required";
-      if (!data.abstract.trim() || data.abstract.trim().length < 30)
-        errs.abstract = "Abstract must be at least 30 characters";
+      if (!data.paymentRef.trim() || data.paymentRef.trim().length < 6)
+        errs.paymentRef = "Enter a valid transaction reference";
     }
     if (s === 3) {
       if (!data.agreeToTerms) errs.agreeToTerms = "You must agree to the terms";
