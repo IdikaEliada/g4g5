@@ -491,13 +491,6 @@ function StepThree({ data, errors, set }: StepProps) {
         ))}
       </div>
 
-      {data.abstract && (
-        <div className="rounded-xl bg-zinc-100/60 border border-zinc-700/50 px-4 py-3 text-sm">
-          <p className="text-zinc-500 text-xs mb-1 uppercase tracking-wide">Abstract</p>
-          <p className="text-zinc-700 leading-relaxed">{data.abstract}</p>
-        </div>
-      )}
-
       <label className="flex items-start gap-3 cursor-pointer">
         <input
           type="checkbox"
