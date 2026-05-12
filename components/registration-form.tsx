@@ -323,26 +323,144 @@ function StepOne({ data, errors, set }: StepProps) {
   );
 }
 
+// function StepTwo({ data, errors, set }: StepProps) {
+//   return (
+//     <StepMotion>
+//       <Field label="Pay with Opay" error={errors.projectTitle}>
+//         <input
+//           className={inputCls}
+//           placeholder="Give your project a name"
+//           value={data.projectTitle}
+//           onChange={(e) => set("projectTitle", e.target.value)}
+//         />
+//       </Field>
+//       <Field label="Other payment methods" error={errors.abstract}>
+//         <textarea
+//           className={twMerge(inputCls, "resize-none min-h-36")}
+//           placeholder="Describe what you're building and why it matters (min 30 chars)…"
+//           value={data.abstract}
+//           onChange={(e) => set("abstract", e.target.value)}
+//         />
+//         <p className="text-[11px] text-zinc-600 text-right">
+//           {data.abstract.trim().length} chars
+//         </p>
+//       </Field>
+//     </StepMotion>
+//   );
+// }
+
 function StepTwo({ data, errors, set }: StepProps) {
+  const [showOther, setShowOther] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const amount = getAmount(data.category);
+  
+  const copyAccount = () => {
+    navigator.clipboard.writeText(ACCOUNT.number);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+  
   return (
     <StepMotion>
-      <Field label="Pay with Opay" error={errors.projectTitle}>
+      {/* Amount badge */}
+      <div className="flex items-center justify-between rounded-xl bg-zinc-900 border border-zinc-700/60 px-4 py-3">
+        <span className="text-xs text-zinc-400 uppercase tracking-wide">
+          Registration Fee
+        </span>
+        <span className="font-heading text-xl font-bold text-primary-400">
+          ₦{amount.toLocaleString()}
+        </span>
+      </div>
+
+      {/* Account details card */}
+      <div className="rounded-xl border border-zinc-700/60 bg-zinc-900/60 px-4 py-4 flex flex-col gap-2 text-sm">
+        <p className="text-xs text-zinc-500 uppercase tracking-wide mb-1">
+          Pay to
+        </p>
+        <div className="flex justify-between items-center">
+          <span className="text-zinc-400">Bank</span>
+          <span className="text-white font-medium">{ACCOUNT.bank}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-zinc-400">Account Name</span>
+          <span className="text-white font-medium">{ACCOUNT.name}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-zinc-400">Account Number</span>
+          <div className="flex items-center gap-2">
+            <span className="text-white font-mono font-semibold">
+              {ACCOUNT.number}
+            </span>
+            <button
+              onClick={copyAccount}
+              className="text-[10px] px-2 py-0.5 rounded-md border border-zinc-600 text-zinc-400 hover:text-white hover:border-zinc-400 transition-colors"
+            >
+              {copied ? "Copied!" : "Copy"}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Primary CTA — OPay */}
+      <a
+        href={OPAY_DEEP_LINK(amount)}
+        className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#00B050] hover:bg-[#009940] text-white font-semibold text-sm transition-colors"
+      >
+        {/* OPay green */}
+        Pay ₦{amount.toLocaleString()} with OPay
+      </a>
+
+      {/* Other methods toggle */}
+      <button
+        onClick={() => setShowOther((v) => !v)}
+        className="flex items-center gap-1.5 text-xs text-zinc-500 hover:text-zinc-300 transition-colors mx-auto"
+      >
+        <ChevronRight
+          className={twMerge(
+            "size-3.5 transition-transform duration-200",
+            showOther && "rotate-90"
+          )}
+        />
+        {showOther ? "Hide" : "Other payment methods"}
+      </button>
+
+      <AnimatePresence>
+        {showOther && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            className="overflow-hidden"
+          >
+            <div className="rounded-xl border border-zinc-700/50 bg-zinc-900/40 px-4 py-3 text-xs text-zinc-400 leading-relaxed space-y-1.5">
+              <p className="text-zinc-300 font-medium text-sm mb-2">
+                Other ways to pay
+              </p>
+              <p>
+                1. Open your bank app (GTB, Access, UBA, Kuda, etc.)
+              </p>
+              <p>2. Transfer ₦{amount.toLocaleString()} to the Zenith account above</p>
+              <p>
+                3. Use <span className="text-white">GFG5-[YourName]</span> as
+                narration if possible
+              </p>
+              <p>4. Copy your transaction reference and paste below</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Reference input */}
+      <Field label="Transaction Reference" error={errors.paymentRef}>
         <input
           className={inputCls}
-          placeholder="Give your project a name"
-          value={data.projectTitle}
-          onChange={(e) => set("projectTitle", e.target.value)}
+          placeholder="e.g. FBN2405121234ABCD"
+          value={data.paymentRef}
+          onChange={(e) => set("paymentRef", e.target.value)}
         />
-      </Field>
-      <Field label="Other payment methods" error={errors.abstract}>
-        <textarea
-          className={twMerge(inputCls, "resize-none min-h-36")}
-          placeholder="Describe what you're building and why it matters (min 30 chars)…"
-          value={data.abstract}
-          onChange={(e) => set("abstract", e.target.value)}
-        />
-        <p className="text-[11px] text-zinc-600 text-right">
-          {data.abstract.trim().length} chars
+        <p className="text-[11px] text-zinc-500">
+          Found in your bank app under transaction details
         </p>
       </Field>
     </StepMotion>
