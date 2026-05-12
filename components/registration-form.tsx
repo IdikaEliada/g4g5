@@ -317,7 +317,7 @@ function StepOne({ data, errors, set }: StepProps) {
 function StepTwo({ data, errors, set }: StepProps) {
   return (
     <StepMotion>
-      <Field label="Project / Idea Title" error={errors.projectTitle}>
+      <Field label="Pay with Opay" error={errors.projectTitle}>
         <input
           className={inputCls}
           placeholder="Give your project a name"
@@ -325,7 +325,7 @@ function StepTwo({ data, errors, set }: StepProps) {
           onChange={(e) => set("projectTitle", e.target.value)}
         />
       </Field>
-      <Field label="Abstract / Brief Description" error={errors.abstract}>
+      <Field label="Other payment methods" error={errors.abstract}>
         <textarea
           className={twMerge(inputCls, "resize-none min-h-36")}
           placeholder="Describe what you're building and why it matters (min 30 chars)…"
