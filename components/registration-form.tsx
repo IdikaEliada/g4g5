@@ -41,7 +41,7 @@ const ACCOUNT = {
 };
 
 const OPAY_DEEP_LINK = (amount: number) =>
-  `opay://transfer?accountNumber=${ACCOUNT.number}&bankCode=100033&amount=${amount}`; // TODO: verify format
+  `opay://transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`; // TODO: verify format
 
 const getAmount = (category: string) =>
   category === "Business Pitch / Tech Startup" ? 3000 : 2500;
@@ -389,7 +389,7 @@ function StepTwo({ data, errors, set }: StepProps) {
           <span className="text-zinc-400">Account Number</span>
           <div className="flex items-center gap-2">
             <span className="text-white font-mono font-semibold">
-              {ACCOUNT.number}
+              {ACCOUNT.numbers}
             </span>
             <button
               onClick={copyAccount}
