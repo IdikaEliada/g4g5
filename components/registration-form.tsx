@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import { ChevronRight, Loader2, CheckCircle2 } from "lucide-react";
+import Link from "next/link"
 
 type FormData = {
   name: string;
@@ -402,13 +403,13 @@ function StepTwo({ data, errors, set }: StepProps) {
       </div>
 
       {/* Primary CTA — OPay */}
-      <a
+      <Link
         href={OPAY_DEEP_LINK(amount)}
         className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#00B050] hover:bg-[#009940] text-white font-semibold text-sm transition-colors"
       >
         {/* OPay green */}
         Pay ₦{amount.toLocaleString()} with OPay
-      </a>
+      </Link>
 
       {/* Other methods toggle */}
       <button
