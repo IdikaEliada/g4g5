@@ -354,6 +354,18 @@ function StepTwo({ data, errors, set }: StepProps) {
   const [showOther, setShowOther] = useState(false);
   const [copied, setCopied] = useState(false);
   const amount = getAmount(data.category);
+  const handleOpayPay = () => {
+    const deepLink = `opay://com.opay.payment/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
+    const fallback = `https://web.opayweb.com/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
+  
+    window.location.href = deepLink;
+  
+    // If app doesn't open within 1.5s, redirect to web fallback
+    setTimeout(() => {
+      window.location.href = fallback;
+    }, 1500);
+  };
+
   
   const copyAccount = () => {
     navigator.clipboard.writeText(ACCOUNT.numbers);
