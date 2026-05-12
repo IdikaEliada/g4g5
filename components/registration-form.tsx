@@ -46,7 +46,7 @@ const OPAY_DEEP_LINK = (amount: number) =>
   
 const handleOpayPay = () => {
   const deepLink = `opay://com.opay.payment/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
-  const fallback = `https://web.opayweb.com/transfer?accountNumber=${ACCOUNT.number}&bankCode=100033&amount=${amount}`;
+  const fallback = `https://web.opayweb.com/transfer?accountNumber=${ACCOUNT.numbers}&bankCode=100033&amount=${amount}`;
 
   window.location.href = deepLink;
 
