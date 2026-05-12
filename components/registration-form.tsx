@@ -355,7 +355,7 @@ function StepTwo({ data, errors, set }: StepProps) {
   const amount = getAmount(data.category);
   
   const copyAccount = () => {
-    navigator.clipboard.writeText(ACCOUNT.number);
+    navigator.clipboard.writeText(ACCOUNT.numbers);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
