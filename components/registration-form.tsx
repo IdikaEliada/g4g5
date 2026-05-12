@@ -11,8 +11,7 @@ type FormData = {
   faculty: string;
   department: string;
   phone: string;
-  projectTitle: string;
-  abstract: string;
+  paymentRef: string;
   agreeToTerms: boolean;
 };
 
