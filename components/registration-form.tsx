@@ -40,6 +40,12 @@ const ACCOUNT = {
   bank: "Palm pay",
 };
 
+const OPAY_DEEP_LINK = (amount: number) =>
+  `opay://transfer?accountNumber=${ACCOUNT.number}&bankCode=100033&amount=${amount}`; // TODO: verify format
+
+const getAmount = (category: string) =>
+  category === "Business Pitch / Tech Startup" ? 3000 : 2500;
+
 const steps = [
   { id: 1, label: "Personal Info" },
   { id: 2, label: "Payment" },
